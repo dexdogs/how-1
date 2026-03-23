@@ -602,7 +602,16 @@
         });
         renderList.sort((a, b) => a.z - b.z);
         ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        const cx = width / 2, cy = height / 2;
+        let cx = width / 2, cy = height / 2;
+        if (window.innerWidth < 768) {
+            const btn = document.querySelector(".hero-content .btn");
+            if (btn) {
+                const cRect = canvas.getBoundingClientRect();
+                const bRect = btn.getBoundingClientRect();
+                cx = bRect.left - cRect.left + bRect.width / 2;
+                cy = bRect.top - cRect.top + bRect.height / 2;
+            }
+        }
         renderList.forEach(p => {
             const scale = 350 / (350 + p.z); 
             const px = cx + p.x * scale, py = cy + p.y * scale;
