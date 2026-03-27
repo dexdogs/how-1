@@ -440,7 +440,7 @@
 <section class="hero">
     <canvas id="globe-canvas"></canvas>
     <div class="hero-content">
-        <h1>your environmental<br>index watchdogs.</h1>
+        <h1><span id="rotating-text" style="display: inline-block; transition: transform 0.2s ease-out, opacity 0.2s ease-out;">your environmental watchdogs</span></h1>
         <a href="#timeline-start" class="btn">Our Stakeholder Network &darr;</a>
     </div>
 </section>
@@ -648,5 +648,35 @@
     }
 </script>
 
+<script>
+    const phrases = [
+        "your environmental watchdogs",
+        "Environmental commodities",
+        "Industrial manufacturing facilities",
+        "Data centers",
+        "Residential Buildings",
+        "Commercial Buildings"
+    ];
+    let phraseIndex = 0;
+    const rotatingText = document.getElementById("rotating-text");
+    setInterval(() => {
+        /* Slide up and fade out */
+        rotatingText.style.transform = "translateY(-30px)";
+        rotatingText.style.opacity = "0";
+        setTimeout(() => {
+            /* Change text */
+            phraseIndex = (phraseIndex + 1) % phrases.length;
+            rotatingText.innerText = phrases[phraseIndex];
+            /* Move to bottom instantly (invisible) */
+            rotatingText.style.transition = "none";
+            rotatingText.style.transform = "translateY(30px)";
+            void rotatingText.offsetWidth; /* Trigger reflow */
+            /* Slide up to center and fade in */
+            rotatingText.style.transition = "transform 0.2s ease-out, opacity 0.2s ease-out";
+            rotatingText.style.transform = "translateY(0)";
+            rotatingText.style.opacity = "1";
+        }, 200); /* 200ms quick out animation */
+    }, 2000); /* 2 seconds per phrase */
+</script>
 </body>
 </html>
