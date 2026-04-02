@@ -1039,8 +1039,7 @@ function countFilledFields(s) {
   return count;
 }
 
-
-let tickerInterval = null;
+var tickerInterval = null;
 function startTicker(data) {
   const valid = data.filter(s => s.teaser_score !== null && s.teaser_score !== undefined && s.teaser_score !== "—" && s.teaser_score !== "");
   if(!valid.length) return;
@@ -1057,7 +1056,7 @@ function startTicker(data) {
   let i = 0;
   function updateTicker() {
     const s = shuffled[i];
-    const name = (s.name || s.company_name || "UNKNOWN").toUpperCase();
+    const name = (s.name || s.company_name || "UNKNOWN").toUpperCase().substring(0, 3);
     const score = String(s.teaser_score).substring(0, 4);
     const trendArrow = '&#9650;'; 
     
@@ -1068,13 +1067,6 @@ function startTicker(data) {
   updateTicker();
   if(tickerInterval) clearInterval(tickerInterval);
   tickerInterval = setInterval(updateTicker, 3000);
-}</strong> <span style="color: rgba(0,0,0,0.3); margin: 0 8px;">|</span> <span style="font-family: monospace; font-weight: bold; font-size: 1.1rem;">${score} <span style="font-size: 0.9em; margin-left: 2px;">${trendArrow}</span></span>`;
-    i = (i + 1) % shuffled.length;
-  }
-  
-  updateTicker(); // Trigger the first one immediately
-  if(tickerInterval) clearInterval(tickerInterval);
-  tickerInterval = setInterval(updateTicker, 3000); // Swap every 3 seconds
 }
 
 async function loadStartups() {
