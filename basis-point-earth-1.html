@@ -1056,7 +1056,8 @@ function startTicker(data) {
   let i = 0;
   function updateTicker() {
     const s = shuffled[i];
-    const name = (s.name || s.company_name || "UNKNOWN").toUpperCase().substring(0, 3);
+    const rawName = (s.name || s.company_name || "UNKNOWN").toUpperCase();
+    const name = rawName.substring(0, 3);
     const score = String(s.teaser_score).substring(0, 4);
     const trendArrow = '&#9650;'; 
     
