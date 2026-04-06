@@ -243,7 +243,6 @@ thead th {
 tbody tr {
   border-bottom: 1px solid var(--border);
   transition: background 0.1s;
-  cursor: pointer;
 }
 tbody tr:last-child { border-bottom: none; }
 tbody tr:hover { background: rgba(255, 255, 255, 0.05); }
@@ -1412,7 +1411,7 @@ function renderTable() {
     
     const bclass  = stageBadgeClass(funding_stage);
     
-    return `<tr onclick="showDetail('${id}')">
+    return `<tr>
       <td>${esc(short_name)}</td>
       <td class="td-name">${esc(name)}</td>
       <td class="td-sector">${esc(primary_sector)}</td>
