@@ -1091,7 +1091,7 @@ th, td {
                         <thead>
         <tr>
           <th>Ticker Name</th>
-          <th>Name</th>
+          <th style="display: none;">Name</th>
           <th>Primary Sector</th>
           <th>Primary Mechanism</th>
           <th>Technology Type</th>
@@ -1413,7 +1413,7 @@ function renderTable() {
     
     return `<tr>
       <td>${esc(short_name)}</td>
-      <td class="td-name">${esc(name)}</td>
+      <td class="td-name" style="display: none;">${esc(name)}</td>
       <td class="td-sector">${esc(primary_sector)}</td>
       <td>${esc(primary_mechanism)}</td>
       <td>${esc(technology_type)}</td>
