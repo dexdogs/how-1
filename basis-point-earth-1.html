@@ -1091,6 +1091,7 @@ th, td {
     <table>
                         <thead>
         <tr>
+          <th>Ticker Name</th>
           <th>Name</th>
           <th>Primary Sector</th>
           <th>Primary Mechanism</th>
@@ -1389,6 +1390,7 @@ function renderTable() {
 
   tbody.innerHTML = filteredStartups.slice(0, displayLimit).map(s => {
     const id = s.id || "—";
+    const short_name = s.short_name || "—";
     const name = s.name || "—";
     const slug = s.slug || "—";
     const tagline = s.tagline || "—";
@@ -1411,6 +1413,7 @@ function renderTable() {
     const bclass  = stageBadgeClass(funding_stage);
     
     return `<tr onclick="showDetail('${id}')">
+      <td>${esc(short_name)}</td>
       <td class="td-name">${esc(name)}</td>
       <td class="td-sector">${esc(primary_sector)}</td>
       <td>${esc(primary_mechanism)}</td>
@@ -1476,6 +1479,7 @@ async function showDetail(id) {
 
     const PUBLIC_FIELDS = [
       ["ID", s.id],
+      ["Ticker Name", s.short_name],
       ["Name", s.name],
       ["Slug", s.slug],
       ["Tagline", s.tagline],
