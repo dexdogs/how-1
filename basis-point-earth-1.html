@@ -1325,8 +1325,8 @@ async function loadStartups() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     allStartups = Array.isArray(data) ? data : (data.startups || data.data || []);
-    // Sort descending by amount of filled fields
-    allStartups.sort((a, b) => countFilledFields(b) - countFilledFields(a));
+    // Sort alphabetically by Ticker Name (short_name)
+    allStartups.sort((a, b) => (a.short_name || "").localeCompare(b.short_name || ""));
     document.getElementById("stat-count").textContent = "300+";
     populateFilters();
     filteredStartups = allStartups;
