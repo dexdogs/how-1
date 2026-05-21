@@ -915,28 +915,6 @@ th, td {
 }
 
 </style>
-
-
-/* Mobile Stacking Fix */
-@media (max-width: 768px) {
-    #team {
-        position: fixed !important;
-        bottom: 0 !important;
-        height: 75px !important; /* Fixed height for consistency */
-        z-index: 1001 !important;
-    }
-    #partners-ticker {
-        position: fixed !important;
-        bottom: 75px !important; /* Sit exactly on top of #team footer */
-        height: 50px !important;
-        z-index: 1000 !important;
-    }
-    body {
-        padding-bottom: 125px !important; /* 75px (footer) + 50px (ticker) */
-    }
-}
-
-</style>
 </head>
 <body>
 
@@ -958,7 +936,6 @@ th, td {
   <a href="https://basispointearth.substack.com/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 1rem; text-decoration: none; display: inline-block; margin-bottom: 10px; margin-right: 20px;">substack @basispointearth &nearr;</a>
   <a href="https://www.linkedin.com/in/ankpod/recent-activity/all/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 1rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">linkedin demos &nearr;</a>
 </div>
-
 <style>
 .bpe-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease !important;
@@ -976,73 +953,21 @@ th, td {
     opacity: 0.7;
     text-decoration: underline !important;
 }
-
-
-    body {
-        padding-bottom: 140px !important; /* Ensures content scrolls above both fixed elements */
-    }
-}
-
-
-<style>
 @media (max-width: 768px) {
     .bpe-card {
         cursor: pointer;
         transition: max-height 0.3s ease-out;
         overflow: hidden;
-        max-height: 120px; /* Condensed height */
+        max-height: 120px;
     }
     .bpe-card.expanded {
-        max-height: 1000px; /* Expand height */
+        max-height: 1000px;
     }
-    /* Hide details in condensed mode */
     .bpe-card:not(.expanded) .bpe-link,
     .bpe-card:not(.expanded) p:not(:last-child) {
         display: none;
     }
 }
-
-/* Mobile Stacking Fix */
-@media (max-width: 768px) {
-    #team {
-        position: fixed !important;
-        bottom: 0 !important;
-        height: 75px !important; /* Fixed height for consistency */
-        z-index: 1001 !important;
-    }
-    #partners-ticker {
-        position: fixed !important;
-        bottom: 75px !important; /* Sit exactly on top of #team footer */
-        height: 50px !important;
-        z-index: 1000 !important;
-    }
-    body {
-        padding-bottom: 125px !important; /* 75px (footer) + 50px (ticker) */
-    }
-}
-
-</style>
-
-
-/* Mobile Stacking Fix */
-@media (max-width: 768px) {
-    #team {
-        position: fixed !important;
-        bottom: 0 !important;
-        height: 75px !important; /* Fixed height for consistency */
-        z-index: 1001 !important;
-    }
-    #partners-ticker {
-        position: fixed !important;
-        bottom: 75px !important; /* Sit exactly on top of #team footer */
-        height: 50px !important;
-        z-index: 1000 !important;
-    }
-    body {
-        padding-bottom: 125px !important; /* 75px (footer) + 50px (ticker) */
-    }
-}
-
 </style>
 
 <section id="bpe-list" style="max-width: 1200px; margin: 20px auto 100px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
