@@ -869,6 +869,17 @@ th, td {
     font-size: 1.2rem;
     line-height: 1;
 }
+
+/* Mobile Stacking Fix */
+@media (max-width: 768px) {
+    #partners-ticker {
+        bottom: 70px !important; /* Forces ticker to sit right above the footer */
+    }
+    body {
+        padding-bottom: 140px !important; /* Ensures content scrolls above both fixed elements */
+    }
+}
+
 </style>
 </head>
 <body>
@@ -909,6 +920,17 @@ th, td {
     opacity: 0.7;
     text-decoration: underline !important;
 }
+
+/* Mobile Stacking Fix */
+@media (max-width: 768px) {
+    #partners-ticker {
+        bottom: 70px !important; /* Forces ticker to sit right above the footer */
+    }
+    body {
+        padding-bottom: 140px !important; /* Ensures content scrolls above both fixed elements */
+    }
+}
+
 </style>
 
 <section id="bpe-list" style="max-width: 1200px; margin: 20px auto 100px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
