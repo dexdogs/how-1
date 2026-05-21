@@ -1,0 +1,691 @@
+[33mcommit 5dc19250d52081e3bfe62c0790f2c7280de797a0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu May 21 14:49:03 2026 +0000
+
+    Finalize mobile ticker stacking fix and project grid reshuffle
+
+[33mcommit b4a1c8a1dfa04ae51a98cea2d0622f9a7236d7c1[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu May 21 14:43:48 2026 +0000
+
+    Fix mobile ticker stacking and finalize project grid
+
+[33mcommit f438ac0f4f640d57d50b274be9181c282b4fd7de[m[33m ([m[1;32mduplicate-branch[m[33m)[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu May 21 14:32:21 2026 +0000
+
+    Finalize project grid reshuffle, ticker, and navigation
+
+[33mcommit fcff467f30d6b01c089bc4989779469f03d2f297[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Mon Apr 6 03:45:09 2026 +0000
+
+    sort by ticker name
+
+[33mcommit f036d64296856d8b05b161513a60d47a3a2e8002[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Mon Apr 6 03:43:08 2026 +0000
+
+    Hide Name column in basis point earth table
+
+[33mcommit cbac4ae24cbcc400765b5917debf0435c21ea129[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Mon Apr 6 03:32:52 2026 +0000
+
+    bpe change update
+
+[33mcommit 6a594b731f4b1ac5bacacb116a81add02c635afc[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Mon Apr 6 03:29:28 2026 +0000
+
+    Add Ticker Name column to basis point earth table
+
+[33mcommit c40561342e4030f1bd8772ade396b6b04d9c6742[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Apr 3 13:45:21 2026 +0000
+
+    Update basis-point-earth-1.html: add Commodity Readiness Index panel and refine hero text
+
+[33mcommit af874183e5fedb4b9cae31d1b329a70c80b4faa6[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Apr 3 01:59:19 2026 +0000
+
+    Fixed broken CSS syntax to properly render BPdots font
+
+[33mcommit 725949f085461d0d78f99e6f76ff139a7e265ff7[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Apr 3 01:14:31 2026 +0000
+
+    Updated hero copy and applied bpdots font to header
+
+[33mcommit cc54c926aeb8bdbe6f25d5f695248c6880c91c62[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Apr 3 01:07:25 2026 +0000
+
+    Flipped Alphie tooltip to pop up above the image
+
+[33mcommit ccd1746f3cbbbbe850ca12824242da88d9d39197[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Apr 3 01:05:12 2026 +0000
+
+    Forced top ticker to 3-letter symbols
+
+[33mcommit 3adbcaf7ef3de646768a05d886043d12c653d1e5[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Apr 2 20:17:55 2026 +0000
+
+    Finalized ticker to 3-alphabet symbols, fixed syntax, and included Alphie assets
+
+[33mcommit 7e54092470feec64dbe0e5adbee0a9cdbfd39eb3[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Apr 2 19:58:42 2026 +0000
+
+    Pushing all remaining files including Alphie image and final UI tweaks
+
+[33mcommit f55dd1428fe4a2d9c9082542dc8c2bd8c20ad702[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Apr 2 19:44:14 2026 +0000
+
+    Finalized UI layout, fixed mobile spacing, updated data mappings, and implemented static updating ticker
+
+[33mcommit 1c743269edb828db2193a97b77bfd8289f108561[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Mar 27 22:49:09 2026 +0000
+
+    Update hero animation text: lowercase, add periods, and line breaks
+
+[33mcommit 193a83424198b05dfc72e112a0cae09bda315a52[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Mar 27 22:45:04 2026 +0000
+
+    Fix hero text animation
+
+[33mcommit ca8bb5e9e39cf6445c1c6d90a87bf969be639dc3[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Mar 27 22:41:00 2026 +0000
+
+    Add animated rotating hero text
+
+[33mcommit 79a284bf1243bf726c9b9f64e91baf2f14202146[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Mar 27 14:27:46 2026 +0000
+
+    Update SEO meta description for Google snippet
+
+[33mcommit 46176594daa55e0f5b21e59f10c6cde412de1062[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Tue Mar 24 21:21:38 2026 +0000
+
+    feat: add social sharing preview image and meta tags
+
+[33mcommit fd4d1add520c644010a1c4fba4e86a58fa9d7cb0[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Mon Mar 23 21:35:25 2026 +0000
+
+    fix: center interactive globe on mobile button
+
+[33mcommit 4a128134ff88186dda16d9f0409e7276af48290c[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Sun Mar 22 21:42:49 2026 +0000
+
+    UI: update CV link to use a custom typography-based CV icon
+
+[33mcommit 37d0f13ae5c35cc61fd883b4ca6efa18b8748834[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Mar 20 22:58:39 2026 -0400
+
+    Update index.html
+
+[33mcommit 146302945b073a296294c09d772bf5ad3b2e7fcc[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Mar 11 19:30:08 2026 -0400
+
+    Update index.html
+
+[33mcommit 836b888f1bc45e911c2a1a732de18c6272a6e661[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Mon Mar 2 11:08:12 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 7e309632d4fd8db456fc11f36592282c88fda488[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Mon Mar 2 10:23:18 2026 -0500
+
+    Create CNAME
+
+[33mcommit d63211c583ebe2deee217689ab0976835bf2570a[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Feb 12 11:14:58 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit f6b846d375153aef265b6c18d9763f75da62fb0d[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Feb 12 11:10:24 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit fcb2d72b50ded97e0a2a55828e91d242a21b0b7a[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Sun Feb 8 18:46:48 2026 -0500
+
+    Update index.html
+
+[33mcommit cd4623d2a64d58bb6ed75a2d4f4f1ca98277749a[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Sat Feb 7 17:29:00 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit e7efb189184133e32e37ba076d91f960f99b0e4b[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Feb 5 10:37:06 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 476de96b872c3b6b31fd417c0c415e6c87b85222[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 13:25:47 2026 -0500
+
+    Update index.html
+
+[33mcommit 063bcc2914ade55422f0c641228cf8bb380b6dfd[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 13:13:24 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 2a6494261a46d9dd9ba8c7bbf47c25078de8ac7d[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 13:10:55 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 321a14edbdc3411a3ec5344af8234c4689aa3eb0[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 13:07:46 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 41f42bbccd56f301d79b15a3b1723a837af71667[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 13:03:52 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 0b9cdecf89a65234df491bb454fb41c18278a940[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 13:02:42 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 3c2df6328abffce30b296672b1fe5648f63a64af[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 13:02:24 2026 -0500
+
+    Delete team.png
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 2d459b229b3a4662df186c4f0e3973d770119d4c[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 12:58:32 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 7dcfab0a5105c430dac9d9903bfaf905337944e4[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 12:55:16 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit f2ad256def17799d31ee1501f4917f6ae12304f0[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 12:41:27 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 17715d2b75c2419fa8c8c76362f5d65f27a3960d[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 11:47:10 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 69937aeb9e66467d00ac90e7f39a19c118ae95f7[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 11:33:58 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit eba4c67973d0c46293c762aba6c7ce03d8498129[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 11:29:55 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 48a795ff41998f81974da41fee467556ba7d73ab[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 10:56:02 2026 -0500
+
+    Update index.html
+
+[33mcommit 719dbe523e1a56ddc29e1de859619b2359038580[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 07:53:22 2026 -0500
+
+    Update index.html
+
+[33mcommit df1b2d7d4369d36d446a8dba5a700d1b02a3d894[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 00:25:03 2026 -0500
+
+    Update index.html
+
+[33mcommit 01d578125089684c3712f4641448b693e1a82506[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 00:21:47 2026 -0500
+
+    Update index.html
+
+[33mcommit a8ab8a866b85a8281ff04866f17146054a28a205[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Wed Feb 4 00:17:35 2026 -0500
+
+    Update index.html
+
+[33mcommit dd8a1cd7c8e746ef654b872d7ef16d0606619815[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Tue Feb 3 23:36:46 2026 -0500
+
+    Update index.html
+
+[33mcommit 14e8608f44edff01fd92e6116f976b88e5241472[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Tue Feb 3 23:23:12 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 3c28237746f2ad99808a166086046908e4357522[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Tue Feb 3 23:22:29 2026 -0500
+
+    Delete logo.png
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit fab8b703aecb4377eb9fd045c33af45483c40939[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Tue Feb 3 23:22:07 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 5ca096543d60fcc011b1e89266dbbba4cfdfaa6d[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Tue Feb 3 23:21:52 2026 -0500
+
+    Update index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 5a9c11dacd33cd136788d0528bbc374ef08d5bcd[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Sun Feb 1 18:56:54 2026 -0500
+
+    Update section titles and descriptions in index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 08e960469293ee63e2e73fcab4af5d58f10254b7[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Jan 30 17:45:18 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit e87eefecfe3e5199b71f6e2825d15456e0a0f34c[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Jan 30 17:45:00 2026 -0500
+
+    Delete logo.png
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit de0a6383706f4f09da8b0dff66273077ea7d4061[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Jan 30 17:27:37 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 0aba4641178396055a6c97331fe81c01b50db073[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Fri Jan 30 17:26:38 2026 -0500
+
+    Delete logo.png
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit bfd0e1dc6e017d414d61f735f502cd9833d4db09[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:34:19 2026 -0500
+
+    Change 'LinkedIn' text to 'linkedin' in dropdown
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 8e803ceea521bdbadb0450681a772f4070ade981[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:32:25 2026 -0500
+
+    Update LinkedIn link to include URL and attributes
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 9df1015cc793101a27114d012c6779461a9e395e[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:26:15 2026 -0500
+
+    Update title in index.html for branding change
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 5f69551f024b19b06e99f96a4ec605c70449b285[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:22:45 2026 -0500
+
+    Add temperature symbol '°C' to symbols array
+    
+    Added '°C' to the symbols array in index.html.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 8a263800173030831140ca1e1ba0882a6a21f6ba[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:20:56 2026 -0500
+
+    Expand symbols array with more units and currencies
+    
+    Updated the symbols array to include additional units and currency symbols.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 094b6b5628a7a8525c095f23eead0e29d7288a96[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:16:40 2026 -0500
+
+    Update text in index.html for clarity and branding
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit bae31ab5c4423930188a023bd77c265879bda9f9[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:15:41 2026 -0500
+
+    Update dropdown trigger text and links
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit a15eba37aa2466a0bf9e7f6876b6427c16bb9147[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:13:11 2026 -0500
+
+    Update service section content in index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 45db9a8bdb30d80bae40d17d1c5cf4cc7a620dfa[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 19:08:51 2026 -0500
+
+    Revise index.html for environmental focus
+    
+    Updated the title and various sections of the HTML document to reflect a new focus on environmental indices. Enhanced styles for dropdown menus and adjusted hero section padding for better layout.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit fc8a943b6b3901737885409b7b6dcbe0e32e5b40[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 15:40:37 2026 -0500
+
+    Update title, contact email, and service descriptions
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit ed7eacbdba4e8a86b87e2d5a386f16418bb81988[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 15:17:43 2026 -0500
+
+    Update navigation styles and mobile logo adjustments
+    
+    Adjusted navigation backdrop filter and mobile logo sizes.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 2cdf0d6580843c0e2bab004d9f07cee150345f56[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 15:14:20 2026 -0500
+
+    Enhance navigation and logo styles for mobile
+    
+    Updated navigation backdrop filter and adjusted logo sizes for mobile responsiveness.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 9b5ba1cdc67ecd97d79600c8913918a4f8056096[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 15:06:05 2026 -0500
+
+    Refine logo sizes and globe animation settings
+    
+    Adjusted logo sizes for desktop and mobile views. Improved particle rendering logic and dynamic radius calculations for the globe animation.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 9d32c51239d50cf160d32aa6a856696f8110e186[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:57:38 2026 -0500
+
+    Refactor CSS comments and adjust particle count
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 782abf9f6a4c53be889d8707714a22b3b7eab62f[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:50:52 2026 -0500
+
+    Refactor CSS for hero and section padding
+    
+    Updated styles for hero section and mobile adjustments.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 6018ae14617b5c21e77ccfc21986f8e9aa8199c5[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:50:03 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 15563a1d31147a68fef393782f64545074b40529[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:49:45 2026 -0500
+
+    Delete logo.png
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 1e885cc238acf14d32ee4bd9a2ede4bc81a44956[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:35:37 2026 -0500
+
+    Refactor styles and update hero section content
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit d3ae2a3a0a5b27463d2af165133aec4a55030f01[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:30:00 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 59333e7236389e142000ddabc6458ac59353e945[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:29:37 2026 -0500
+
+    Delete logo.png
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 8c33f1d70f1373251bce03c5217694a0bd1a1e58[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:23:50 2026 -0500
+
+    Improve mobile support and adjust globe settings
+    
+    Enhanced mobile responsiveness and performance optimizations.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 3b850a601bb00722d5673bb22292d4a4ecfa087d[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:20:54 2026 -0500
+
+    Refactor index.html for improved styling and structure
+    
+    Updated title and logo size, adjusted styles, and removed unused sections.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 6f6828eb08df106cecc7904b6a75d63e58024e5c[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:15:03 2026 -0500
+
+    Replace SVG logo with image logo
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 93a221d442335c0c6ba1abd359332bc8316d40d7[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:13:05 2026 -0500
+
+    Add files via upload
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 2dce5020258222671857240da3e512f9ded4b7c3[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 14:03:17 2026 -0500
+
+    Change contact email and update hero section text
+    
+    Updated contact email and modified hero section text.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit bbcee92a3fef47c08760d3f57cbe0a4d31ba6bab[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 13:58:55 2026 -0500
+
+    Update title and contact email in index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit dcbf6a84ea0a5f78b58e518c8f31c0b9ff02d01c[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 13:52:30 2026 -0500
+
+    Update font links and adjust styles in index.html
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit f293e76e71a94bb2aad2e021b7e522cf71680f1c[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 13:44:09 2026 -0500
+
+    Refactor styles and update globe animation settings
+    
+    Updated font styles and adjusted layout for better aesthetics. Enhanced globe animation settings and improved symbol display.
+    
+    Signed-off-by: dexdogs <240069680+dexdogs@users.noreply.github.com>
+
+[33mcommit 389de0a968e979d3f0a8f658f19db39f7a75e65a[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 13:37:46 2026 -0500
+
+    Add contact information to LICENSE file
+    
+    Updated the LICENSE file to include contact information for inquiries regarding the license and its use.
+
+[33mcommit 4edf78f439f18f962e77387b72cf6a863f98c053[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 13:35:31 2026 -0500
+
+    Refactor index.html for layout and styling updates
+
+[33mcommit 71e68725e56d1808666728c03946b7ed05cc84a4[m
+Author: dexdogs <240069680+dexdogs@users.noreply.github.com>
+Date:   Thu Jan 29 13:29:13 2026 -0500
+
+    Revise index.html for dark theme and content updates
+    
+    Updated the title and modified styles for a dark theme. Changed content in the hero and services sections to reflect new offerings.
+
+[33mcommit a4721c9da129be0d2bb592942c236f37ff84d32e[m
+Author: dexdogs <carboncatscc@gmail.com>
+Date:   Thu Jan 29 13:14:52 2026 -0500
+
+    Add initial HTML structure for Dexdogs website
+
+[33mcommit ad42cd13313ef706fa534d6afffe890aed46a964[m
+Author: dexdogs <carboncatscc@gmail.com>
+Date:   Thu Jan 29 13:13:34 2026 -0500
+
+    Add LICENSE file
+
+[33mcommit 8acbc0fd0f1c646fca09bbed140ff45883bfaf8b[m
+Author: dexdogs <carboncatscc@gmail.com>
+Date:   Thu Jan 29 13:11:45 2026 -0500
+
+    Initial commit

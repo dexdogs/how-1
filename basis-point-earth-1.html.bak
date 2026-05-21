@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>dexdogs | partners</title>
+<title>basis point earth - portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
@@ -783,7 +783,7 @@ th, td {
     color: #ffffff; width: 32px; height: 32px; border-radius: 6px; cursor: pointer; 
 }
 .info-content h2 { font-family: 'BPdots', monospace; font-size: 24px; margin-bottom: 20px; color: #ffffff; }
-.info-content h3 { font-family: 'BPdots', monospace; font-size: 18px; margin: 30px 0 15px; color: #3b82f6; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+.info-content h3 { font-family: 'BPdots', monospace; font-size: 18px; margin: 30px 0 15px; color: #3b82f6; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 130px; }
 .info-content p { font-size: 15px; color: #cccccc; line-height: 1.7; margin-bottom: 15px; }
 .info-content ul { margin-bottom: 20px; padding-left: 20px; color: #cccccc; }
 .info-content li { margin-bottom: 8px; font-size: 14px; }
@@ -824,7 +824,7 @@ th, td {
     color: #ffffff; width: 32px; height: 32px; border-radius: 6px; cursor: pointer; 
 }
 .info-content h2 { font-family: 'BPdots', monospace; font-size: 24px; margin-bottom: 20px; color: #96F97B; }
-.info-content h3 { font-family: 'BPdots', monospace; font-size: 18px; margin: 30px 0 15px; color: #96F97B; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+.info-content h3 { font-family: 'BPdots', monospace; font-size: 18px; margin: 30px 0 15px; color: #96F97B; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 130px; }
 .info-content p { font-size: 15px; color: #cccccc; line-height: 1.7; margin-bottom: 15px; }
 @media (max-width: 600px) { .info-panel { width: 100%; padding: 25px; } }
 
@@ -870,34 +870,73 @@ th, td {
     line-height: 1;
 }
 
-/* Mobile Footer/Ticker Stacking Fix */
-@media (max-width: 768px) {
-    #team { position: fixed !important; bottom: 0 !important; height: 75px !important; z-index: 1001 !important; }
-    #partners-ticker { position: fixed !important; bottom: 75px !important; height: 50px !important; z-index: 1000 !important; }
-    body { padding-bottom: 125px !important; }
+
+    body {
+        padding-bottom: 140px !important; /* Ensures content scrolls above both fixed elements */
+    }
 }
 
-</style>
 
 <style>
-/* Sync Ticker Font to index.html style */
-#partners-ticker, #partners-ticker span, #partners-ticker div {
-    font-family: 'BPdots', 'Courier New', monospace !important;
-    color: #a1a1aa !important;
-    letter-spacing: 0.05em !important;
-    font-weight: normal !important;
-    font-size: 1.1rem !important;
+@media (max-width: 768px) {
+    .bpe-card {
+        cursor: pointer;
+        transition: max-height 0.3s ease-out;
+        overflow: hidden;
+        max-height: 120px; /* Condensed height */
+    }
+    .bpe-card.expanded {
+        max-height: 1000px; /* Expand height */
+    }
+    /* Hide details in condensed mode */
+    .bpe-card:not(.expanded) .bpe-link,
+    .bpe-card:not(.expanded) p:not(:last-child) {
+        display: none;
+    }
 }
 
-/* Mobile Footer/Ticker Stacking Fix */
+/* Mobile Stacking Fix */
 @media (max-width: 768px) {
-    #team { position: fixed !important; bottom: 0 !important; height: 75px !important; z-index: 1001 !important; }
-    #partners-ticker { position: fixed !important; bottom: 75px !important; height: 50px !important; z-index: 1000 !important; }
-    body { padding-bottom: 125px !important; }
+    #team {
+        position: fixed !important;
+        bottom: 0 !important;
+        height: 75px !important; /* Fixed height for consistency */
+        z-index: 1001 !important;
+    }
+    #partners-ticker {
+        position: fixed !important;
+        bottom: 75px !important; /* Sit exactly on top of #team footer */
+        height: 50px !important;
+        z-index: 1000 !important;
+    }
+    body {
+        padding-bottom: 125px !important; /* 75px (footer) + 50px (ticker) */
+    }
 }
 
 </style>
 
+
+/* Mobile Stacking Fix */
+@media (max-width: 768px) {
+    #team {
+        position: fixed !important;
+        bottom: 0 !important;
+        height: 75px !important; /* Fixed height for consistency */
+        z-index: 1001 !important;
+    }
+    #partners-ticker {
+        position: fixed !important;
+        bottom: 75px !important; /* Sit exactly on top of #team footer */
+        height: 50px !important;
+        z-index: 1000 !important;
+    }
+    body {
+        padding-bottom: 125px !important; /* 75px (footer) + 50px (ticker) */
+    }
+}
+
+</style>
 </head>
 <body>
 
@@ -909,69 +948,171 @@ th, td {
     <div class="nav-right">
         <a href="index.html" class="nav-link">home</a>
         <div class="nav-divider"></div>
-        <a href="partners.html" class="nav-link" style="font-weight: 800; color: #ffffff;">partners</a>
+        <a href="basis-point-earth-1.html" class="nav-link" style="font-weight: 800; color: #ffffff;">basis point earth</a>
     </div>
 </nav>
 
 <div class="hero" style="text-align: center;">
-  <h1 style="font-family: var(--sans); font-weight: 400; font-size: clamp(24px, 3vw, 36px);"><span style="font-family: 'BPdots', monospace; font-weight: bold; letter-spacing: 1px; color: #96F97B;">partners</span></h1>
+  <h1 style="font-family: var(--sans); font-weight: 400; font-size: clamp(24px, 3vw, 36px);"><span style="font-family: 'BPdots', monospace; font-weight: bold; letter-spacing: 1px; color: #96F97B;">basis point earth</span></h1>
+  <p class="hero-sub" style="margin: 0 auto; margin-bottom: 15px; max-width: 800px; line-height: 1.6;">Environment has a data problem. Basis Point Earth is our portfolio to fix it.<br>Delivered by dexdogs + partners.</p>
+  <a href="https://basispointearth.substack.com/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 1rem; text-decoration: none; display: inline-block; margin-bottom: 10px; margin-right: 20px;">substack @basispointearth &nearr;</a>
+  <a href="https://www.linkedin.com/in/ankpod/recent-activity/all/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 1rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">linkedin demos &nearr;</a>
 </div>
 
 <style>
-.partner-card {
+.bpe-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease !important;
 }
-.partner-card:hover {
+.bpe-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.4);
     background: rgba(255,255,255,0.06) !important;
-    border-color: rgba(150, 249, 123, 0.4) !important; /* Slight green tint matching the hero */
+    border-color: rgba(150, 249, 123, 0.4) !important;
 }
-.partner-link {
+.bpe-link {
     transition: opacity 0.2s ease;
 }
-.partner-link:hover {
+.bpe-link:hover {
     opacity: 0.7;
     text-decoration: underline !important;
 }
 
-/* Mobile Footer/Ticker Stacking Fix */
+
+    body {
+        padding-bottom: 140px !important; /* Ensures content scrolls above both fixed elements */
+    }
+}
+
+
+<style>
 @media (max-width: 768px) {
-    #team { position: fixed !important; bottom: 0 !important; height: 75px !important; z-index: 1001 !important; }
-    #partners-ticker { position: fixed !important; bottom: 75px !important; height: 50px !important; z-index: 1000 !important; }
-    body { padding-bottom: 125px !important; }
+    .bpe-card {
+        cursor: pointer;
+        transition: max-height 0.3s ease-out;
+        overflow: hidden;
+        max-height: 120px; /* Condensed height */
+    }
+    .bpe-card.expanded {
+        max-height: 1000px; /* Expand height */
+    }
+    /* Hide details in condensed mode */
+    .bpe-card:not(.expanded) .bpe-link,
+    .bpe-card:not(.expanded) p:not(:last-child) {
+        display: none;
+    }
+}
+
+/* Mobile Stacking Fix */
+@media (max-width: 768px) {
+    #team {
+        position: fixed !important;
+        bottom: 0 !important;
+        height: 75px !important; /* Fixed height for consistency */
+        z-index: 1001 !important;
+    }
+    #partners-ticker {
+        position: fixed !important;
+        bottom: 75px !important; /* Sit exactly on top of #team footer */
+        height: 50px !important;
+        z-index: 1000 !important;
+    }
+    body {
+        padding-bottom: 125px !important; /* 75px (footer) + 50px (ticker) */
+    }
 }
 
 </style>
 
-<section id="partners-list" style="max-width: 1200px; margin: 0 auto 100px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
-    
-    <div class="partner-card" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
-        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Reframe Systems Inc.</h2>
-        <a href="https://www.reframe.systems/" target="_blank" class="partner-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Website &nearr;</a>
-        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0;">Reframe is committed to creating resilient, energy-efficient homes that benefit both people and the planet. Climate resilient homes for all.</p>
-    </div>
-    
-    <div class="partner-card" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
-        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">xMAPS AI Infra LLC</h2>
-        <a href="https://infrastructureresearch.substack.com/" target="_blank" class="partner-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Website &nearr;</a>
-        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0;">xMAPS maps where large-scale infrastructure including AI infra like data centers actually gets built and why it ends up where it does.</p>
-    </div>
-    
-    <div class="partner-card" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
-        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">REON Technology</h2>
-        <a href="https://reoncorp.com/" target="_blank" class="partner-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Website &nearr;</a>
-        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0;">REON provides intelligent, reliable, and accessible energy storage and microgrid solutions that accelerate the global adoption of renewable energy.</p>
-    </div>
-    
-    <div class="partner-card" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
-        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Nuhad Studio LLC</h2>
-        <a href="https://nuhadstudio.com/" target="_blank" class="partner-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Website &nearr;</a>
-        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0;">Nuhad Studio is a BIM specialist team for residential and commercial buildings.</p>
-    </div>
-    
-</section>
 
+/* Mobile Stacking Fix */
+@media (max-width: 768px) {
+    #team {
+        position: fixed !important;
+        bottom: 0 !important;
+        height: 75px !important; /* Fixed height for consistency */
+        z-index: 1001 !important;
+    }
+    #partners-ticker {
+        position: fixed !important;
+        bottom: 75px !important; /* Sit exactly on top of #team footer */
+        height: 50px !important;
+        z-index: 1000 !important;
+    }
+    body {
+        padding-bottom: 125px !important; /* 75px (footer) + 50px (ticker) */
+    }
+}
+
+</style>
+
+<section id="bpe-list" style="max-width: 1200px; margin: 20px auto 100px; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">ADAPT</h2>
+        <a href="https://www.infrastructure-research.com/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">ADAPT maps where large-scale infrastructure actually gets built and why it ends up where it does. This is primary research. Every data point is sourced. Every claim is traceable.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">xMAPS</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Gridwatch</h2>
+        <a href="https://infrastructureresearch.substack.com/p/the-factory-that-changed-everything" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">Signal intelligence built from public land records, LLC filings, permit databases, and utility filings. We are building alternative datasets as we peel back the layers of the environmental data problem.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">xMAPS</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">CA CEMS Facility Database</h2>
+        <a href="https://ca-cems-terminal.vercel.app/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br><a href="https://github.com/dexdogs/ca-cems-terminal" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Github &nearr;</a>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">A terminal-style explorer for California's industrial CEMS facilities, cross-referencing three public data layers for maximum confidence.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">In-house dev</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Carbon + Water Stress Explorer</h2>
+        <a href="https://carbon-water-explorer.vercel.app/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br><a href="https://github.com/dexdogs/carbon-water-explorer" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Github &nearr;</a>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">Interactive map showing the true sustainability-adjusted cost of data center siting, combining grid carbon intensity and water scarcity risk.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">In-house dev</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Whole-building LCA for ADUs</h2>
+        <a href="https://www.linkedin.com/feed/update/urn:li:activity:7453466978989654016/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">Lifecycle analysis for Reframe Systems' new ADU product for the CA market, proving that the shell superstructure accounts for less than 7% of the footprint.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">Reframe Systems</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Embodied Carbon Observatory</h2>
+        <a href="https://basispointearth.substack.com/p/embodied-carbon-observatory" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br><a href="https://github.com/dexdogs/embodied-carbon-observatory" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Github &nearr;</a>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">Embodied Carbon Observatory operationalizes this decomposition across 40k+ environmental declarations for US concrete plants.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">In-house dev</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Meet my agent Alphie</h2>
+        <a href="https://basispointearth.substack.com/p/meet-alphie-here-is-why-it-exists" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">I built an agent named Alphie on my wife’s Dell laptop. Its only job: find alt data signals in environmental commodity markets before the market prices them.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">In-house dev</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Commodities Discovery Engine</h2>
+        <a href="commodities-discovery-engine.html" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">Proprietary BPE-CRI methodology applied to 300+ climate tech startups, identifying high-integrity tradeable assets.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">xMAPS</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Car's Carbon Complexities</h2>
+        <a href="https://bmw-ix-carbon-explorer.vercel.app/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br><a href="https://github.com/dexdogs/bmw-ix-carbon-explorer" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Github &nearr;</a>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">Carbon explorer mapping 80 Product Category Rules across 15 vehicle zones to visualize supply chain estimates.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">In-house dev</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">CA Data Centers Compliance</h2>
+        <a href="https://ca-data-centers-3d.vercel.app/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br><a href="https://github.com/dexdogs/ca-data-centers-3d" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Github &nearr;</a>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">Map of CA data centers showing facilities under CCA jurisdictions where CALGreen Title 24 regulations apply.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">In-house dev</span></p>
+    </div>
+    <div class="bpe-card" onclick="toggleCard(this)" style="border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 40px; background: rgba(255,255,255,0.03); backdrop-filter: blur(5px);">
+        <h2 style="font-family: var(--font-logo); color: #ffffff; font-size: 1.5rem; margin-bottom: 5px; font-weight: normal; letter-spacing: 0.05em;">Air Sealing Logic Engine</h2>
+        <a href="https://air-sealing-logic-engine.vercel.app/" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 10px;">Launch &nearr;</a><br><a href="https://github.com/dexdogs/air-sealing-logic-engine" target="_blank" class="bpe-link" style="color: #96F97B; font-family: var(--sans); font-size: 0.9rem; text-decoration: none; display: inline-block; margin-bottom: 20px;">Github &nearr;</a>
+        <p style="color: var(--text-gray); font-size: 1rem; line-height: 1.6; font-family: var(--sans); margin: 0; margin-bottom: 20px;">Modeling engine quantifying impact of air sealing strategies on unit compartmentalization.</p>
+        <p style="color: #ffffff; font-size: 0.9rem; font-family: var(--sans); margin: 0; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">Partner: <span style="font-weight: bold; color: #96F97B;">Reframe Systems</span></p>
+    </div>
+</section>
 
 <div id="partners-ticker">
     <div class="ticker-move">
@@ -1029,7 +1170,6 @@ th, td {
     &copy; 2026 dexdogs USA.
 </footer>
 
-<div class="toast" id="toast"></div>
 
 
 
@@ -1042,5 +1182,14 @@ th, td {
 
 
 
+
+
+<script>
+function toggleCard(el) {
+    if (window.innerWidth <= 768) {
+        el.classList.toggle('expanded');
+    }
+}
+</script>
 </body>
 </html>

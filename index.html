@@ -449,6 +449,14 @@
     font-size: 1.2rem;
     line-height: 1;
 }
+
+/* Mobile Footer/Ticker Stacking Fix */
+@media (max-width: 768px) {
+    #team { position: fixed !important; bottom: 0 !important; height: 75px !important; z-index: 1001 !important; }
+    #partners-ticker { position: fixed !important; bottom: 75px !important; height: 50px !important; z-index: 1000 !important; }
+    body { padding-bottom: 125px !important; }
+}
+
 </style>
 
 <style>
@@ -460,6 +468,14 @@
     font-weight: normal !important;
     font-size: 1.1rem !important;
 }
+
+/* Mobile Footer/Ticker Stacking Fix */
+@media (max-width: 768px) {
+    #team { position: fixed !important; bottom: 0 !important; height: 75px !important; z-index: 1001 !important; }
+    #partners-ticker { position: fixed !important; bottom: 75px !important; height: 50px !important; z-index: 1000 !important; }
+    body { padding-bottom: 125px !important; }
+}
+
 </style>
 
 </head>
