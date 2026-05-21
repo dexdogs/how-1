@@ -27,7 +27,7 @@
         }
         
         html { scroll-behavior: smooth; }
-        body { margin: 0; font-family: var(--font-main); background-color: var(--bg); color: var(--text); overflow-x: hidden; padding-bottom: 80px; }
+        body { margin: 0; font-family: var(--font-main); background-color: var(--bg); color: var(--text); overflow-x: hidden; padding-bottom: 130px; }
         
         /* Navigation */
         nav { padding: 1.5rem 2rem; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; box-sizing: border-box; backdrop-filter: blur(5px); }
@@ -408,7 +408,48 @@
                 padding: 1.5rem 1rem; /* Reduced from 4rem */
             }
         }
-    </style>
+    
+@keyframes ticker-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-25%); }
+}
+#partners-ticker {
+    position: fixed;
+    bottom: 71px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(56, 56, 56, 0.95);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255,255,255,0.1);
+    z-index: 999;
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+}
+.ticker-move {
+    display: flex;
+    width: max-content;
+    animation: ticker-scroll 35s linear infinite; /* Slowed down */
+    will-change: transform;
+    align-items: center;
+}
+.ticker-item {
+    font-family: var(--font-logo); 
+    font-size: 1.2rem; 
+    color: var(--text-gray); 
+    letter-spacing: 0.1em; 
+    white-space: nowrap;
+    padding: 0 3rem; /* Creates exactly equal spacing with dot in the middle */
+}
+.ticker-dot {
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    line-height: 1;
+}
+</style>
 </head>
 <body>
 
@@ -425,10 +466,13 @@
             <div class="dropdown-content">
                 <a href="mailto:ankur@dexdogs.earth">email</a>
                 <a href="https://linkedin.com/company/dexdogs" target="_blank" rel="noopener noreferrer">linkedin</a>
+                <a href="https://basispointearth.substack.com/" target="_blank" rel="noopener noreferrer">substack</a>
                 <a href="https://github.com/dexdogs" target="_blank" rel="noopener noreferrer">github</a>
                 <a href="https://calendly.com/dexdogs/30min" target="_blank" rel="noopener noreferrer">schedule a call</a>
             </div>
         </div>
+        <div class="nav-divider"></div>
+        <a href="partners.html" class="nav-link">partners</a>
         <div class="nav-divider"></div>
         <a href="basis-point-earth-1.html" class="nav-link">basis point earth</a>
     </div>
@@ -440,9 +484,10 @@
     <canvas id="globe-canvas"></canvas>
     <div class="hero-content">
         <h1 id="rotating-text" style="transition: transform 0.2s ease-out, opacity 0.2s ease-out;">your environmental<br>index watchdogs.</h1>
-        <a href="#timeline-start" class="btn">Our Stakeholder Network &darr;</a>
+        <a href="#timeline-start" class="btn">Our Partners Network &darr;</a>
     </div>
 </section>
+
 
 <section id="timeline">
     <div class="timeline-header" id="timeline-start">
@@ -491,6 +536,27 @@
 
 
 
+
+<div id="partners-ticker">
+    <div class="ticker-move">
+        <span class="ticker-item">Reframe Systems Inc.</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">xMAPS AI Infra LLC</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">REON Technology</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">Nuhad Studio LLC</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">Reframe Systems Inc.</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">xMAPS AI Infra LLC</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">REON Technology</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">Nuhad Studio LLC</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">Reframe Systems Inc.</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">xMAPS AI Infra LLC</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">REON Technology</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">Nuhad Studio LLC</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">Reframe Systems Inc.</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">xMAPS AI Infra LLC</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">REON Technology</span><span class="ticker-dot">&bull;</span>
+        <span class="ticker-item">Nuhad Studio LLC</span><span class="ticker-dot">&bull;</span>
+    </div>
+</div>
 <section id="team">
     <h2 style="font-family: var(--font-main); text-align: center; margin-bottom: 3rem;">Team</h2>
     <div class="team-member">
