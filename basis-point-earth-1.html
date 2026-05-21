@@ -1128,5 +1128,90 @@ function toggleCard(el) {
     }
 }
 </script>
+
+<style>
+@media (max-width: 768px) {
+    .bpe-card {
+        cursor: pointer;
+        height: auto !important;
+        max-height: none !important;
+        min-height: auto !important;
+        padding: 24px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        box-sizing: border-box;
+        overflow: visible !important;
+    }
+    .bpe-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 8px !important;
+    }
+    .bpe-card-header h2, .bpe-card-header h3, .bpe-card-header h4 {
+        margin: 0 !important;
+        line-height: 1.2;
+    }
+    .mobile-toggle-icon {
+        color: #4ade80;
+        font-family: 'BPdots', monospace;
+        font-size: 1.5rem;
+        margin-left: 15px;
+        line-height: 1;
+        flex-shrink: 0;
+    }
+    .partner-text {
+        margin: 0 !important;
+        font-size: 0.9rem;
+        color: #a1a1aa;
+        line-height: 1.3;
+    }
+    /* Hide everything EXCEPT the new header and partner text when collapsed */
+    .bpe-card:not(.expanded) > *:not(.bpe-card-header):not(.partner-text) {
+        display: none !important;
+    }
+    .bpe-card.expanded .partner-text {
+        margin-bottom: 16px !important;
+    }
+}
+@media (min-width: 769px) {
+    .mobile-toggle-icon { display: none !important; }
+    .bpe-card-header { display: block; }
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bpe-card').forEach(card => {
+        let title = card.querySelector('h2, h3, h4');
+        
+        /* Create a wrapper for perfect flexbox alignment of title and + */
+        if (title && !title.parentElement.classList.contains('bpe-card-header')) {
+            let header = document.createElement('div');
+            header.className = 'bpe-card-header';
+            card.insertBefore(header, title);
+            header.appendChild(title);
+            header.insertAdjacentHTML('beforeend', '<span class="mobile-toggle-icon">+</span>');
+        }
+        
+        /* Tag partner text */
+        Array.from(card.children).forEach(child => {
+            if (child.textContent.includes('Partner:')) {
+                child.classList.add('partner-text');
+            }
+        });
+
+        /* Toggle logic */
+        card.addEventListener('click', (e) => {
+            if (window.innerWidth > 768 || e.target.closest('a')) return;
+            let exp = card.classList.toggle('expanded');
+            let icon = card.querySelector('.mobile-toggle-icon');
+            if(icon) icon.textContent = exp ? '−' : '+';
+        });
+    });
+});
+</script>
+
 </body>
 </html>
