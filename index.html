@@ -450,11 +450,25 @@
     line-height: 1;
 }
 
-/* Mobile Footer/Ticker Stacking Fix */
-@media (max-width: 768px) {
-    #team { position: fixed !important; bottom: 0 !important; height: 75px !important; z-index: 1001 !important; }
+
     #partners-ticker { position: fixed !important; bottom: 75px !important; height: 50px !important; z-index: 1000 !important; }
     body { padding-bottom: 125px !important; }
+}
+
+
+@media (max-width: 768px) {
+    .hamburger { display: block !important; margin-left: auto; }
+    .nav-right { display: none; position: absolute; top: 100%; left: 0; background: rgba(18, 18, 18, 0.95); backdrop-filter: blur(5px); width: 100%; padding: 1.5rem 0; flex-direction: column !important; align-items: center !important; gap: 1rem !important; border-bottom: 1px solid rgba(255,255,255,0.1); box-sizing: border-box; }
+    .nav-right.active { display: flex !important; }
+    .nav-divider { display: none !important; }
+    .dropdown-content { position: static; display: none; background: transparent; border: none; box-shadow: none; text-align: center; }
+    .dropdown.active .dropdown-content { display: block; }
+    #team { position: static !important; height: auto !important; padding: 2rem 1rem !important; background: transparent; border-top: none; }
+    .team-member { flex-direction: column; text-align: center; gap: 10px; }
+    .member-details { align-items: center; margin-top: 5px; }
+    .team-socials { margin-left: 0; justify-content: center; width: 100%; }
+    #partners-ticker { bottom: 0 !important; position: fixed !important; }
+    body { padding-bottom: 50px !important; }
 }
 
 </style>
@@ -469,15 +483,40 @@
     font-size: 1.1rem !important;
 }
 
-/* Mobile Footer/Ticker Stacking Fix */
-@media (max-width: 768px) {
-    #team { position: fixed !important; bottom: 0 !important; height: 75px !important; z-index: 1001 !important; }
+
     #partners-ticker { position: fixed !important; bottom: 75px !important; height: 50px !important; z-index: 1000 !important; }
     body { padding-bottom: 125px !important; }
 }
 
 </style>
 
+
+<style>
+@media (max-width: 768px) {
+    #hamburger { display: block !important; }
+    .nav-right { display: none !important; position: absolute; top: 70px; left: 0; width: 100%; background: #050505; padding: 1.5rem 0; flex-direction: column !important; align-items: center !important; z-index: 1001; }
+    .nav-right.active { display: flex !important; }
+    nav { align-items: flex-start; }
+}
+</style>
+
+
+
+
+
+
+<style id="mobile-expand-css">
+@media (max-width: 768px) {
+    #core-capabilities .card h3 { font-size: 1.1rem !important; word-break: break-word; line-height: 1.4; margin-bottom: 0; }
+    #core-capabilities .card .card-content { display: none; }
+    #core-capabilities .card.expanded .card-content { display: block; margin-top: 15px; }
+    #core-capabilities .card .expand-btn { display: block; width: 100%; margin-top: 15px; background: transparent; border: 1px solid #a1a1aa; color: #a1a1aa; padding: 10px; border-radius: 8px; font-size: 0.9rem; text-align: center; pointer-events: none; }
+}
+@media (min-width: 769px) { 
+    #core-capabilities .card .expand-btn { display: none !important; } 
+    #core-capabilities .card .card-content { display: block !important; } 
+}
+</style>
 </head>
 <body>
 
@@ -486,6 +525,7 @@
         <img src="logo.png" alt="dexdogs logo" class="logo-img">
         <span class="logo-text">dexdogs</span>
     </div>
+    <div class="hamburger" id="hamburger" style="position: absolute; right: 20px; top: 15px; z-index: 1002; display:none; font-size: 2rem; cursor: pointer; color: white;">&#9776;</div>
     <div class="nav-right">
         <a href="#core-capabilities" class="nav-link">services</a>
         <div class="nav-divider"></div>
@@ -547,17 +587,26 @@
 
 <section id="core-capabilities" class="section">
     <div class="grid">
-        <div class="card">
+        <div class="card" onclick="var b=this.querySelector('.expand-btn'); this.classList.toggle('expanded'); b.innerHTML = this.classList.contains('expanded') ? 'Read Less &uarr;' : 'Read More &darr;';" style="cursor: pointer;">
             <h3>Data Sourcing and Monitoring</h3>
-            <p>Source all raw data: energy, carbon, waste, resilience, and climate risks. Monitor, manage, and maintain multimodal environmental data. Reduce signal-to-noise ratio to surface asset-grade data.</p>
+            <div class="card-content">
+                <p>Source all raw data: energy, carbon, waste, resilience, and climate risks. Monitor, manage, and maintain multimodal environmental data. Reduce signal-to-noise ratio to surface asset-grade data.</p>
+            </div>
+            <div class="expand-btn">Read More &darr;</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="var b=this.querySelector('.expand-btn'); this.classList.toggle('expanded'); b.innerHTML = this.classList.contains('expanded') ? 'Read Less &uarr;' : 'Read More &darr;';" style="cursor: pointer;">
             <h3>Environmental Analysis and Reporting</h3>
-            <p>Perform impact analysis. Deliver financially-material energy, resilience, LCA, and ESG reports. Ensure fundraise and audit readiness.</p>
+            <div class="card-content">
+                <p>Perform impact analysis. Deliver financially-material energy, resilience, LCA, and ESG reports. Ensure fundraise and audit readiness.</p>
+            </div>
+            <div class="expand-btn">Read More &darr;</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="var b=this.querySelector('.expand-btn'); this.classList.toggle('expanded'); b.innerHTML = this.classList.contains('expanded') ? 'Read Less &uarr;' : 'Read More &darr;';" style="cursor: pointer;">
             <h3>Strategic Environmental Leadership</h3>
-            <p>Deploy proforma. Align strategy to transform environmental data from cost center to profit-driving asset. Build boardroom integrity and trust.</p>
+            <div class="card-content">
+                <p>Deploy proforma. Align strategy to transform environmental data from cost center to profit-driving asset. Build boardroom integrity and trust.</p>
+            </div>
+            <div class="expand-btn">Read More &darr;</div>
         </div>
     </div>
 </section>
@@ -776,5 +825,19 @@
         }, 200);
     }, 2000);
 </script>
+
+<script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+        document.querySelector('.nav-right').classList.toggle('active');
+    });
+    document.querySelector('.dropdown-trigger').addEventListener('click', function(e) {
+        if(window.innerWidth <= 768) {
+            e.preventDefault();
+            this.parentElement.classList.toggle('active');
+        }
+    });
+</script>
+
+
 </body>
 </html>
